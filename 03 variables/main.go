@@ -11,4 +11,10 @@ func main() {
 
 	fmt.Println(x, y, z)
 
+	var i int    // default to 0
+	var j string // default to ""
+	var k bool   // default to false
+
+	fmt.Println(i, j, k)
+
 }
