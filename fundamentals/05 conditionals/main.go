@@ -3,11 +3,23 @@ package main
 import "fmt"
 
 // basic if else statement
-func evenOrOdd(num int) {
+func evenOrOddWithIfElse(num int) {
 	if num%2 == 0 {
 		fmt.Printf("%d is even\n", num)
 	} else {
 		fmt.Printf("%d is odd\n", num)
+	}
+}
+
+// basic switch case statement
+func evenOrOddWithSwitchCase(num int) {
+	switch num % 2 {
+	case 0:
+		fmt.Printf("%d is even\n", num)
+	case 1:
+		fmt.Printf("%d is odd\n", num)
+	default:
+		fmt.Println("math is broken, this should never happen!")
 	}
 }
 
@@ -21,8 +33,8 @@ func checkSumIsCorrect(num1, num2, userSum int) {
 }
 
 func main() {
-	evenOrOdd(69)
-	evenOrOdd(100)
+	evenOrOddWithIfElse(69)
+	evenOrOddWithSwitchCase(100)
 	checkSumIsCorrect(5, 5, 10)
 	checkSumIsCorrect(12, 32, 45)
 }
