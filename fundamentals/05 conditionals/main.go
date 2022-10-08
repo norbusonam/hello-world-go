@@ -2,13 +2,6 @@ package main
 
 import "fmt"
 
-func main() {
-	evenOrOdd(69)
-	evenOrOdd(100)
-	checkSumIsCorrect(5, 5, 10)
-	checkSumIsCorrect(12, 32, 45)
-}
-
 // basic if else statement
 func evenOrOdd(num int) {
 	if num%2 == 0 {
@@ -25,4 +18,11 @@ func checkSumIsCorrect(num1, num2, userSum int) {
 	} else {
 		fmt.Printf("That's incorrect, %d + %d = %d, not %d\n", num1, num2, realSum, userSum)
 	}
+}
+
+func main() {
+	evenOrOdd(69)
+	evenOrOdd(100)
+	checkSumIsCorrect(5, 5, 10)
+	checkSumIsCorrect(12, 32, 45)
 }
